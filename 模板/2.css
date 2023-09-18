@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* nav 样式设置 */
+nav {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 5px;
+}
+nav img {
+    vertical-align: middle;
+}
+nav ul,nav li {
+    display: inline-block;
+}
+nav li a {
+    padding: 30px 15px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    color: #000;
+}
+nav li a:hover,.currentPage {
+    background-color: red;
+    color: white;
+}
+/* scrollArea 样式设置 */
+.scrollArea {
+    margin: 15px 0;
+    overflow: hidden;
+}
+.scrollName {
+    float: left;
+    padding: 10px 19px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+.hotNews {
+    height: 38px;
+    width: 896px;
+    line-height: 36px;
+    float: left;
+    background-color: gray;
+    overflow: hidden; /*实现滚动的必要条件*/
+}
+.hotNews li {
+    list-style: none;
+}
+.hotNews a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding-left: 20px;
+}
+.hotNews a:hover {
+    color: red;
+}
+/* courses 样式设置 */
+.courses li {
+    display: inline-block;
+    width: 330px;
+    cursor: pointer;
+}
+.courses li:nth-child(2) {
+    margin: 0 5px;
+}
+.courses p {
+    font-size: 14px;
+    text-align: center;
+    width: 328px;
+    border: 1px solid lightgray;
+    padding: 5px 0;
+    border-top: none;
+    margin-top: -2px;
+}
+/* contentArea 样式设置 */
+.contentArea {
+    margin: 20px 0;
+    display: inline-flex;
+}
+.contentArea>div {
+    height: 270px;
+    width: 328px;
+    display: inline-block;
+    border: 1px solid lightgray;
+}
+.contentArea>div:nth-child(2) {
+    margin: 0 5px;
+}
+.contentNews li {
+    list-style: none;
+    margin: 10px 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+article {
+    overflow: hidden;
+}
+.articleDate {
+    width: 30px;
+    background-color: red;
+    color: white;
+    padding: 10px 5px;
+    float: left;
+    border-radius: 5px;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+.articelTitle {
+    font-weight: bolder;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 1em;
+    line-height: 25px;
+    float: left;
+}
+.articelTitle:hover {
+    color: red;
+}
+.articleContent {
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+    width: 230px;
+    margin-left: 1em;
+}
+.contentTitle {
+    background-color: red;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-indent: 1em;
+    padding: 10px 20px;
+}
+.contentActivity_section {
+    padding: 14px;
+}
+.contentActivity img {
+    width: 300px;
+    height: 100px;
+}
+.contentActivity_section a {
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+}
+.contentContact_section {
+    padding: 3px;
+}
+.contentContact_section p {
+    line-height: 20px;
+}
+.bottom {
+    height: 60px;
+    background-color: lightgray;
+    text-align: center;
+}
+.bottom p {
+    padding-top: 30px;
+}
