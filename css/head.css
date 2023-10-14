@@ -1,0 +1,102 @@
+.head {
+    position: fixed;
+    width: 100%;
+    height: 66px;
+    background: rgba(17, 17, 17, 0.75);
+    padding: 0 55px 0 75px;
+    color: #ccc;
+    font-size: 17px;
+    min-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.head-left {
+    display: flex;
+    align-items: center;
+}
+
+.head-music {
+    width: 30px;
+    height: 30px;
+    background-image: url('../asset/music-close.png');
+    background-size: 100%;
+}
+
+.head-logo h1 {
+    display: none;
+}
+
+.head-logo {
+    width: 127px;
+    height: 66px;
+    margin: 0 25px;
+    background-color: blanchedalmond;
+    background: url('../asset/logo.png');
+    background-position: center;
+}
+
+.head-nav {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.head-nav a {
+    float: left;
+    padding: 0 25px 0 30px;
+    letter-spacing: 5px;
+    height: 100%;
+    line-height: 66px;
+}
+
+.head-nav a:hover,
+.head-nav a.active {
+    color: #fff;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.head-meu {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 40px;
+    height: 5px;
+    background-color: #69e0ff;
+    transition: .2s;
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+}
+
+.head-right img {
+    vertical-align: middle;
+    opacity: .6;
+    width: 27px;
+    height: 27px;
+    margin-left: 18px;
+    margin-top: -2px;
+}
+
+.head-user {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.head-heart {
+    cursor: pointer;
+}
+
+.head-heart:hover,
+.head-user:hover {
+    color: #fff;
+}
+
+.head-heart:hover img,
+.head-user:hover img {
+    opacity: 1;
+}

@@ -1,0 +1,160 @@
+.city {
+    width: 100%;
+}
+
+.city li {
+    position: relative;
+    list-style: none;
+    height: 260px;
+    width: 100%;
+    transition: .2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.city li>.title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.city li:last-child>section:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.city li>.title>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city li:last-child>section:first-child>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city li>.border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 7px solid transparent;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.city li:last-child>section:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.city li>.title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+.city li:last-child>section:last-child::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.city li>img {
+    object-fit: cover;
+}
+
+.city li:hover>.border {
+    border: 7px solid white;
+}
+
+.city li:hover>.title {
+    transform: scale(1.05);
+}
+
+.city li:hover>.title::before {
+    background: rgba(0, 0, 0, .2);
+}
+
+.city li>.border>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 132px;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    background: url('../asset/title-square.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.city li:last-child {
+    cursor: auto;
+}
+
+.city li:last-child>section:last-child>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    color: rgba(255, 255, 255, .3);
+    font-size: 36px;
+}
+
+.city li>.border>i {
+    position: absolute;
+    width: 210px;
+    height: 10px;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../asset/title-decoration.png');
+    opacity: 0;
+    transition: .3s;
+}
+
+.city li:hover>.border>i {
+    opacity: 1;
+}
+
+.city li>.border>.hero {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 100px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.city li:hover>.border>.hero {
+    opacity: 1;
+}
